@@ -89,10 +89,11 @@
 			</div>
 		</div>
 	</div>
+	<script src="js/state-data.js"></script>
 	<script>
 		document.getElementById('state-list').onchange = function() {
           var selected = this.value;  
-			console.log(selected);
+			document.getElementById('info-name').textContent = stateData[selected].name;
 		};
 	</script>
 </body>
