@@ -94,6 +94,8 @@
 		document.getElementById('state-list').onchange = function() {
           var selected = this.value;  
 			document.getElementById('info-name').textContent = stateData[selected].name;
+			document.getElementById('info-abbreviation').textContent = stateData[selected].abbr;
+
 		};
 	</script>
 </body>
